@@ -3,12 +3,7 @@
     <head>
         <title>Title</title>
         <link rel="stylesheet" href="css/mini.css">
-        <!-- <style>
-            *{
-                background
-
-            }
-        </style> -->
+        
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -224,27 +219,26 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62554.31239074074!2d76.41388934616873!3d11.505546054671045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8a722ce0fff11%3A0x4abee536cee1126d!2sGudalur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1744103027706!5m2!1sen!2sin" width="600"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62521.58102222061!2d76.21543615564259!3d11.6519105199399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba608bb285e4b7d%3A0xe29cb8dc789996ce!2sSultan%20Bathery%2C%20Kerala!5e0!3m2!1sen!2sin!4v1745042256017!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-6">
-                    <form>
+                    <form id="contact-form">
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label text-black">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                          <label for="Name" class="form-label text-black">Name:</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+
+                          <label for="Email" class="form-label text-black">Email address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@example.com" name="email" required>
                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                           <label for="phonenumber" class="form-label text-black">Phone number</label>
-                          <input type="tel" class="form-control" id="phonenumber" placeholder="1234567890">
+                          <input type="tel" class="form-control" id="phonenumber" placeholder="1234567890" name="phoneNumber" required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-black">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="feedBack" class="form-label text-black">Feed Back</label>
+                            <textarea class="form-control" id="feedBack" rows="3" name="feedBack"></textarea>
                           </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label text-black" for="exampleCheck1">Check me out</label>
-                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
                 </div>
@@ -346,5 +340,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="js/mini.js"></script>
+        
     </body>
 </html>
